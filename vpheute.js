@@ -20,7 +20,7 @@ async function main(){
     var pagedatum = await page.$eval('.mon_title', e => e.innerHTML);  // Ausgabe zB "13.10.2017 Freitag, Woche B"
     var stimmt = (tag == pagedatum.slice(0,2)); // Führende Leerstelle, folgende 2 Zeichen entsprechen dem Tagesdatum
     console.log("Seite hat ", pagedatum, " , und heute ist der ", tag, "., Übereinstimmung ", stimmt);
-} while (!stimmt && subpage > 2);
+} while (!stimmt && subpage < 2);
 
   // Refresh-Tag entfernen
   var regex = /(<meta\shttp-equiv="refresh"[\S\s]*?htm">)/ig
