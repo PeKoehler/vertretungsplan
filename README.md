@@ -1,4 +1,4 @@
-# vetretungsplan
+# vertretungsplan
 AvHG-Vertretungsplan faster
 
 The official school server changes day-subpages every 15 sec - you have to wait forever to see the actual day's table.
